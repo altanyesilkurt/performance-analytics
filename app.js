@@ -19,7 +19,7 @@ const setResponseData = (data) => {
         ttfbList.push(el.ttfb)
         fcpList.push(el.fcp)
         domLoadList.push(el.dom_load)
-        windowLoadList.push(el.window_load_events)      
+        windowLoadList.push(el.window_load)      
     })
     return {ttfbList,fcpList,domLoadList,windowLoadList}
 }
