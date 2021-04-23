@@ -8,7 +8,7 @@ app.use('/static', express.static('public'))
 app.use(cors())
 
 var pgp = require('pg-promise')(/* options */)
-var db = pgp('postgres://postgres:12345@35.192.45.106:5432/postgres')
+var db = pgp('postgresql://postgres:12345@35.192.45.106:5432/postgres')
 
 const setResponseData = (data) => {
     const ttfbList=[]
@@ -48,5 +48,5 @@ app.post('/', function (req, res) {
   })
 
 app.listen((process.env.PORT || port), () => {
-  console.log(`Example app listening at https://legend-travel.netlify.app/`)
+  console.log(`Application listening at https://legend-travel.netlify.app/`)
 })
