@@ -24,7 +24,7 @@ window.onload = function() {
       windowLoadEvents: windowLoadEvents
       })
       console.log("data",data)
-      fetch("https://performance-analytic.herokuapp.com/", {
+      fetch("http://localhost:3000", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
