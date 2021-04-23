@@ -24,7 +24,7 @@ window.onload = function() {
       windowLoadEvents: windowLoadEvents
       })
       console.log("data",data)
-      fetch("https://legend-travel.netlify.app/", {
+      fetch("https://bba-performance-analytics.herokuapp.com", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
