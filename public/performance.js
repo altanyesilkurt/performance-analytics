@@ -3,8 +3,8 @@ window.onload = function () {
   const paintEntries = window.performance.getEntriesByType("paint")[1];
   const navigationEntries = performance.getEntriesByType("navigation")[0];
 
-    const URL = "https://performance-analytic.herokuapp.com/"
-  // const URL = "http://localhost:3000"
+  //  const URL = "https://performance-analytic.herokuapp.com/"
+  const URL = "http://localhost:3000"
 
   //TTFB
   const ttfb = navigationEntries.responseStart - navigationEntries.requestStart;
